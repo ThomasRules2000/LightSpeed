@@ -6,6 +6,11 @@ Music by [Eric Skiff](http://ericskiff.com/music/), licenced under a Creative Co
 ## To-Do:
 - Main Menu with Buttons
 - Create Ship
+  - Larger ships are slower
+    - LightSpeed charges slower
+	- Less evasion
+  - Ships have certain amounts of points to spend at start
+    - Can be upgraded to change shape at shops (shipyard?)
   - Ship is 2D array of Tiles
   - Tile Class
     - Attributes for O2 (float), bools for others (isCracked, isWalkable etc.)
@@ -29,6 +34,13 @@ Music by [Eric Skiff](http://ericskiff.com/music/), licenced under a Creative Co
   - DroneBase Class
     - Similar to WeaponBase, but for drones
 	- All Drone Weapons inherit this class
+	
+- Abilities
+  - Active cost resources to use
+  - Active abilities require charging using power for certain amount of time
+  - Passive abilities are less powerful, but don't require charging
+    - Provide buffs to player/enemies
+  - Take up space in ship
 	
 - AI
   - Use A* Algorithm for entity pathfinding between rooms
