@@ -5,11 +5,11 @@ using UnityEngine;
 public class ShipBase : MonoBehaviour
 {
     //In plan, 0=empty, 1=floor, 2=wall
-    public int[,] plan;
+    public short[,] plan;
     public Transform floor;
     public Transform wall;
 
-    public ShipBase(int[,] _plan, Transform _floor, Transform _wall)
+    public ShipBase(short[,] _plan, Transform _floor, Transform _wall)
     {
         plan = _plan;
         floor = _floor;
