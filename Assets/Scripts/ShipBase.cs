@@ -9,6 +9,11 @@ public class ShipBase : MonoBehaviour
     public Transform floor;
     public Transform wall;
 
+    public ShipBase(short[,] _plan)
+    {
+        plan = _plan;
+    }
+
     public ShipBase(short[,] _plan, Transform _floor, Transform _wall)
     {
         plan = _plan;
