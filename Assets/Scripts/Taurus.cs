@@ -19,7 +19,7 @@ public class Taurus : MonoBehaviour {
 
 	void Start () {
         ShipBase taurus = new ShipBase(plan, floor, wall);
-        taurus.spawn();
+        taurus.spawn(transform);
 	}
 	
 }
