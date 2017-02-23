@@ -2,16 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class ShipBase : MonoBehaviour
 {
+    public Transform prefabListObj;
+    Transform floor;
+    Transform wall;
+
     //In plan, 0=empty, 1=floor, 2=wall
     public short[,] plan;
-    public Transform floor;
-    public Transform wall;
 
     public ShipBase(short[,] _plan)
     {
+        Dictionary<string, Transform> prefabList;
+        prefabList = prefabListObj.GetComponent<PrefabList>().dict;
+
+        floor = prefabList["Floor"];
+        wall = prefabList["Wall"];
+
         plan = _plan;
+        Debug.Log(floor);
+        Debug.Log(wall);
     }
 
     public ShipBase(short[,] _plan, Transform _floor, Transform _wall)

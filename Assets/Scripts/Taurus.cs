@@ -15,6 +15,8 @@ public class Taurus : MonoBehaviour {
         };
 
 	void Start () {
+        //ShipBase taurus = gameObject.AddComponent<ShipBase>();
+        //taurus.plan = plan;
         ShipBase taurus = new ShipBase(plan);
         taurus.spawn(transform);
 	}
